@@ -1,0 +1,178 @@
+/*
+	Title: Default Woosh CSS
+	Date: 23 june 2010
+	Author(s): Kristof Houben
+	Company: Yappa BVBA
+*/
+
+/* FORMS
+===================================*/
+form.default{
+	margin:.75em 0;
+	display:block;
+}
+
+form.default .text, form.default .select, form.default .time, form.default .radio{
+	margin-bottom:0.5em;
+}
+
+form.default .text input, form.default .textarea textarea, form.default .select input, form.default .password input{
+	background:white;
+	border:1px solid #ccc;
+	padding:5px;
+	-moz-border-radius:5px;
+	-webkit-border-radius:5px;
+	border-radius:5px;
+	margin-top:5px;
+	width:300px;
+}
+
+form.default .text input.no-top, form.default .textarea textarea.no-top, form.default .select input.no-top{
+	margin-top:0 !important;
+}
+
+form.default .text.oneline input{
+	width:100px;
+}
+
+form.default .textarea textarea:hover{
+	background:white
+}
+
+form.default .textarea textarea:focus{
+	background:white;
+	color:black;
+}
+
+form.default .text input{
+	background:white;
+	border:1px solid #ccc;
+	padding:5px;
+	-moz-border-radius:5px;
+	-webkit-border-radius:5px;
+	border-radius:5px;
+	color:#9d9c9c;
+	margin-top:5px;
+}
+
+form.default .text input:focus{
+	background:white;
+	color:black;
+}
+
+form.default .text input.small{
+	width:30px !important;
+}
+
+form.default .text input.medium{
+	width:150px !important;
+}
+
+form.default .password input.medium{
+	width:150px !important;
+}
+
+form.default .text input.large{
+	width:350px;
+}
+
+form.default .text label, form.default .textarea label, form.default .radio legend, form.default .select label, form.default .time label, form.default .password label{
+	width:108px;
+	display:block;
+	float:left;
+	padding:10px 0 0 0;
+}
+
+form.default .radio label{
+	margin:0 .75em 0 .5em;
+}
+
+form.default .radio input{
+	margin-bottom:5px;
+}
+
+form.default .text label em, form.default .textarea label em, form.default .radio legend em, form.default .select label em, form.default .time label em{
+	font-style: normal;
+	color:#FF5C53;
+}
+
+form.default .checkbox{
+	margin-left:108px;
+}
+
+form.default .oneline{
+	float:left;
+}
+
+form.default .childsmall label{
+	width: 25px!important;
+	margin-right:10px !important;
+	margin-left:20px !important;
+}
+
+form.default .child label{
+	width: 70px!important;
+	margin-right:10px !important;
+	margin-left:20px !important;
+}
+
+form.default .childsmall input{
+	width:30px !important; 
+}
+
+form.default .woosh.error-message{
+	margin-top:1em;
+	color:red;
+}
+
+form.default .submit{
+	margin-top:1.5em;
+	margin-left:108px;
+}
+
+form.default .submit input{
+	border:medium none;
+	color:#111416;
+	cursor:pointer;
+	font-size:12px;
+	padding:5px 20px;
+	text-align:center;
+}
+
+form.default .error-message{
+	color:#E76656;
+	margin-top:5px;
+	background:url(../img/error.png) no-repeat left center;
+	padding-top:3px;
+	padding-left:20px;
+	font-size:11px;
+}
+
+/* GALLERY & DOCUMENTS
+===================================*/
+section.content .gallery{
+	margin-top:2em;
+	list-style:none !important;
+	margin-left:0;
+}
+
+section.content .gallery li{
+	float:left;
+	padding:0;
+	border-bottom:none;
+	margin-right:15px;
+	margin-bottom:15px;
+} 
+
+section.content .gallery li a{
+	display:block;
+	line-height:0;
+}
+
+section.content .documents li{
+}
+
+section.content .documents li a{
+	padding-left:10px;
+	font-size: 1.2em;
+}

@@ -1,0 +1,87 @@
+/*
+	Title: Init CSS
+	Date: 17 March 2011
+	Author(s): Kristof Houben
+	Company: Yappa BVBA
+*/
+
+/* GLOBAL
+=====================================*/
+.left{
+	float:left !important;
+	margin-right:10px;
+}
+
+.right{
+	float:right !important;
+	margin-left:10px;
+}
+
+.none{
+	float:none !important;
+}
+
+.align-left{ text-align: left; }
+.align-right{ text-align: right; }
+.align-center{ text-align: center; }
+
+p, blockquote, ul, ol, dl, form, table, pre{line-height:inherit;margin:0 0 0.5em 0;}
+
+.clear{clear:both;}
+.first{margin-left:0 !important;}
+.last{margin-right:0 !important;}
+.top{margin-top:0 !important;}
+.bottom{margin-bottom:0 !important;}
+
+/* Hide for both screenreaders and browsers
+=====================================*/
+.hidden { display:none; } 
+
+/* Hide only visually, but have it available for screenreaders
+=====================================*/
+.visuallyhidden { 
+	position:absolute !important;    
+  	clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+	clip: rect(1px, 1px, 1px, 1px); 
+}
+
+/* Hide visually and from screenreaders, but maintain layout
+=====================================*/
+.invisible { visibility: hidden; }
+
+/* >> The Magnificent CLEARFIX <<
+=====================================*/
+.clearfix:after { content: "\0020"; display: block; height: 0; clear: both; visibility: hidden; }
+.clearfix { display: inline-block; }
+* html .clearfix { height: 1%; } /* Hides from IE-mac \*/
+.clearfix { display: block; }
+
+/* COLUMNS
+=====================================*/
+.col{ float:left; display:inline; }		
+
+/* pixel based grid */	
+.pixels.cols .col{width:460px;margin-left:20px; /* 2 equal width columns layout - default */}	
+.pixels.cols3 .col{width:300px; margin-left:20px;} /* 3 equal width columns layout */
+.pixels.cols4 .col{width:220px; margin-left:20px;} /* 4 equal width columns layout */
+.pixels.cols5 .col{width:172px; margin-left:20px;} /* 5 equal width columns layout */
+.pixels.cols6 .col{width:140px; margin-left:20px;} /* 6 equal width columns layout */
+
+.ie6 .pixels.cols .col{margin-left:10px; /* 2 equal width columns layout - default */ }	
+.ie6 .pixels.cols3 .col{margin-left:10px;} /* 3 equal width columns layout */
+.ie6 .pixels.cols4 .col{margin-left:10px;} /* 4 equal width columns layout */
+.ie6 .pixels.cols5 .col{margin-left:10px;} /* 5 equal width columns layout */
+.ie6 .pixels.cols6 .col{margin-left:10px;} /* 6 equal width columns layout */	
+
+/* percentage based grid */		
+.percentage.cols .col{width:100%;margin-left:0; font-size: 11px; /* 2 equal width columns layout - default */}
+.percentage.cols3 .col{width:30%;margin-left:5%;} /* 3 equal width columns layout */
+.percentage.cols4 .col{width:21%;margin-left:4%;} /* 4 equal width columns layout */
+.percentage.cols5 .col{width:16%;margin-left:5%;} /* 5 equal width columns layout */
+.percentage.cols6 .col{width:12%;margin-left:5%;} /* 6 equal width columns layout */
+
+.ie6 .percentage.cols .col{ margin-left:2%;  /* 2 equal width columns layout - default */ }	
+.ie6 .percentage.cols3 .col{margin-left:2%;} /* 3 equal width columns layout */
+.ie6 .percentage.cols4 .col{margin-left:2%;} /* 4 equal width columns layout */
+.ie6 .percentage.cols5 .col{margin-left:2%;} /* 5 equal width columns layout */
+.ie6 .percentage.cols6 .col{margin-left:4%;} /* 6 equal width columns layout */
